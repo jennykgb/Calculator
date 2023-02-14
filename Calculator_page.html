@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link href="./styles.css" rel="stylesheet">
+  <script src="Calculation.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+</head>
+
+<div class="calc">
+    <div>
+        <h1 id="display">0</h1>
+    </div>
+    <div>
+        <div class="row">
+            <button class="clear col-xs-6" id="clear" onclick="clearVals();">AC</button>
+            <button class="operator col-xs-3" id="divide" value="/" onclick="addOp(this);">/</button>
+            <button class="operator col-xs-3" id="multiply" value="*" onclick="addOp(this);">x</button>
+            
+        </div>
+        <div class="row">
+            <button class="number col-xs-3" id="seven" value="7" onclick="addNum(this);">7</button>
+            <button class="number col-xs-3" id="eight" value="8" onclick="addNum(this);">8</button>
+            <button class="number col-xs-3" id="nine" value="9" onclick="addNum(this);">9</button>
+            <button class="operator col-xs-3" id="subtract" value="-" onclick="addOp(this);">-</button>
+        </div>
+        <div class="row">
+            <button class="number col-xs-3" id="four" value="4" onclick="addNum(this);">4</button>
+            <button class="number col-xs-3" id="five" value="5" onclick="addNum(this);">5</button>
+            <button class="number col-xs-3" id="six" value="6" onclick="addNum(this);">6</button>
+            <button class="operator col-xs-3" id="add" value="+" onclick="addOp(this);">+</button>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-9">
+                <div class="row">
+                    <button class="number col-xs-4" id="one" value="1" onclick="addNum(this);">1</button>
+                    <button class="number col-xs-4" id="two" value="2" onclick="addNum(this);">2</button>
+                    <button class="number col-xs-4" id="three" value="3" onclick="addNum(this);">3</button>
+                </div>
+                <div class="row">
+                    <button class="number col-xs-8" id="zero" value="0" onclick="addNum(this)">0</button>
+                    <button class="number col-xs-4" id="decimal" value="." onclick="addNum(this);">.</button>
+                </div>
+            </div>
+            <button class="equals col-xs-3" id="equals" onclick="equals();">=</button>
+        </div>
+
+
+
+    </div>
+</div>
+
+</html>
